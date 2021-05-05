@@ -16,7 +16,7 @@ class SentClientsController extends Controller
     {
         $message_clients = MessageClient::all(); //declared variable to store all the elements of the db
         return view("pages.sent_msg_clients")->with("message_clients", $message_clients);
-        return view("show_receivedmsg_associates", compact('message_clients'));
+        // return view("show_receivedmsg_associates", compact('message_clients'));
     }
 
     public function create(){
@@ -29,11 +29,6 @@ class SentClientsController extends Controller
         $message_client->subject = $request->subject;
         $message_client->mode_of_payment = $request->mode_of_payment;
         // $message_client->message = $request->message;
-
-        $message_client->save();
-
-        return redirect()->route('message_clients.index');
-
         
         $size = $request->file('message')->getSize();
         $name = $request->file('message')->getClientOrganizationalName();
@@ -44,6 +39,21 @@ class SentClientsController extends Controller
         $photo->size = $size;
         $photo->save();
         return redirect()->route('message_client.index');
+
+        $message_client->save();
+
+        return redirect()->route('message_clients.index');
+
+        
+        // $size = $request->file('message')->getSize();
+        // $name = $request->file('message')->getClientOrganizationalName();
+
+        // $request->file('message')->storeAs('public/img_clients/', $name);
+        // $photo = new MessageClient();
+        // $photo->name = $name;
+        // $photo->size = $size;
+        // $photo->save();
+        // return redirect()->route('message_client.index');
 
     }
 
