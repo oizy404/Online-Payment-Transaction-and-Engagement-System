@@ -28,7 +28,7 @@ class SentClientsController extends Controller
         $message_client = new MessageClient();
         $message_client->subject = $request->subject;
         $message_client->mode_of_payment = $request->mode_of_payment;
-        $message_client->message = $request->message;
+        // $message_client->message = $request->message;
 
         $message_client->save();
 
