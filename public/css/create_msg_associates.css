@@ -1,0 +1,58 @@
+.create-msg{
+    padding: 0px;
+    background-color: #fff;
+    width: 40%;
+    height: 75%;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    right: 15;
+}
+.card{
+    height: 75%;
+}
+.card-header{
+    display: inline-flex;
+    background-color: #333333;
+    color: white;
+}
+#btn-close{
+    width: 30px;
+    float: right;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+}
+#msg-form{
+    height: 380px;
+    margin: 7px;
+    border: none;
+}
+#subject{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#msg-body{
+    width: 100%;
+    min-height: 100%;
+    margin-bottom: 10px;
+    border: none;
+}
+.msg-btns{
+    padding: 5px;
+}
+#btn-send{
+    background-color: #5D5E5E;
+    color: white;
+    float: right;
+}
+#mode_payment{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 5px;
+}

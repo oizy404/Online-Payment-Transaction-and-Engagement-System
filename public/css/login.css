@@ -1,0 +1,45 @@
+body{ 
+    padding:0px;
+    margin:0px;
+    width: 100%;
+}
+.col.logo{
+    height: 42.4rem;
+    text-align: center;
+}
+#companylogo{
+    margin-top: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col.login{
+    background-color: #333333;
+    height: 42.4rem;
+    text-align: center;
+}
+form#login{
+    background-color: white;
+    padding: 30px;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 10px rgb(0, 0, 0), 0 6px 6px rgba(0, 0, 0);
+}
+#user-img{
+    height: 100px;
+    width: 100px;
+    background-color:#5D5E5E;
+}
+#btn-login{
+    background-color: #5D5E5E;
+    color: white;
+    height: 50px;
+}
+#btn-login:hover{
+    background-color: #333333;
+}

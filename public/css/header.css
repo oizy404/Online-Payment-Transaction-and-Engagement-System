@@ -1,0 +1,41 @@
+.navbar{
+    background-color: #5D5E5E;
+    color: white;
+}
+#btn-sidenav{
+    background-color: transparent;
+    border: none;
+}
+i.fas.fa-bars{
+    font-size: 25px;
+}
+#companyicon{
+    margin-left: 20px;
+}
+.user-info{ 
+    display: inline-flex;
+    float: right;
+    margin-left: auto;
+}
+p{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 134px;
+}
+#btn-avatar{
+    width: 72px;
+}
+#user-avatar{
+    height: 35px;
+    width: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.dashboard-body{
+    padding:0px;
+    margin:0px;
+    width: 100%;
+}
+.side-chat-container{
+    padding: 20px;
+}

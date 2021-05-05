@@ -1,0 +1,35 @@
+.side-nav{
+    background-color: #5D5E5E;
+    position: fixed;
+    padding: 20px;
+    height: 630px;
+    width: 228px;
+    text-align: center;
+}
+i.fas.fa-plus{
+    font-size: 30px;
+    margin-left: -50px;
+    margin-right: 25px;
+    color: white;
+}
+#btn-create{
+    background-color: #333333;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 23px;
+    color: white;
+}
+.msg-updates{
+    margin-top: 10px;
+}
+.msg-updates a{
+    padding: 5px 70px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.msg-updates a:hover{
+    background-color: #6a6b6b;
+}

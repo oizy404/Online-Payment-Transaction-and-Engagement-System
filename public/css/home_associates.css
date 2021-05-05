@@ -1,0 +1,61 @@
+.side-chat-container{
+    background-color: white;
+    display: inline-block;
+    padding: 15px;
+    height: 630px;
+}
+.side-chat-container h4{
+    background-color: #ddd;
+}
+.chat-con{
+    background-color: #5D5E5E;
+    padding: 15px 10px;
+    height: 570px;
+}
+.side-chat-container p{
+    color: white;
+}
+.dashboard{
+    background-color: #333333;
+    height: 630px;
+    overflow-y: scroll;
+}
+.msg-updates{
+    padding: 3px;
+}
+.btn-delete{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+table{
+    font-family: Arial,Helvetica,Sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    background-color: white;
+}
+#message td, #message th {
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+th {
+      height: 40px;
+      background-color: #DFDDDC;
+}
+td {
+    height: 15px;
+    background-color: white;
+}
+#msg-checkbox{
+    width: 100%;
+}
+#msg{
+    width: 50%;
+}

@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $("#btn-create").click(function(){
+        $(".create-msg").fadeIn(500);
+    });
+    $("#btn-close").click(function(){
+        $(".create-msg").fadeOut(500);
+    });
+    $("#btn-send").click(function(){
+        $(".create-msg").fadeOut(500);
+    });
+})
