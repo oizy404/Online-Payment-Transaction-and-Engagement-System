@@ -26,7 +26,7 @@ use App\Model\Message;
 Route::get('/', function () {
     return view('layout.master');
 });
-Route::view('/', 'pages.show_receivedmsg_associates')->name('login');
+Route::view('/', 'pages.login')->name('login');
 
 Route::resource('inbox_message_clients', InboxAssociatesController::class);
 Route::resource('message_associates', SentAssociatesController::class);
