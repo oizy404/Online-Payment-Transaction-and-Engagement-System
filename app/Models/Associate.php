@@ -11,11 +11,8 @@ class Associate extends Model
 
     protected $table = "associates";
 
-    public function client_corporations(){
-        return $this->hasMany(ClientCorporation::class);
-    }
-    public function client_individuals(){
-        return $this->hasMany(ClientIndividual::class);
+    public function clients(){
+        return $this->hasMany(Client::class);
     }
     public function message_associates(){
         return $this->hasMany(MessageAssociate::class);

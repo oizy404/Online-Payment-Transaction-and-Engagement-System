@@ -8,11 +8,14 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/login.css')}}">
+    <link rel="stylesheet" href="{{asset('css/admin-home.css')}}">
     <link rel="stylesheet" href="{{asset('css/header.css')}}">
     <link rel="stylesheet" href="{{asset('css/sidenav.css')}}">
     <link rel="stylesheet" href="{{asset('css/home_associates.css')}}">
     <link rel="stylesheet" href="{{asset('css/create_msg_clients.css')}}">
     <link rel="stylesheet" href="{{asset('css/create_msg_associates.css')}}">
+    <link rel="stylesheet" href="{{asset('css/create-client-account.css')}}">
+    <link rel="stylesheet" href="{{asset('css/create-associate-account.css')}}">
 </head>
 <body>
 
@@ -22,5 +25,7 @@
     <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('js/sidenav.js')}}"></script>
     <script src="{{asset('js/create_message.js')}}"></script>
+    <script src="{{asset('js/create-client-account.js')}}"></script>
+    <script src="{{asset('js/create-associate-account.js')}}"></script>
 </body>
 </html>

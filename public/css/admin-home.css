@@ -1,0 +1,31 @@
+#cardcreate-account{
+    margin-top: 80px;
+}
+#card-users{
+    margin-top: 50px;
+}
+#admin-dashcards .card-body{
+    height: 130px;
+    background-image: linear-gradient(rgb(41, 41, 41), rgb(161, 161, 161));
+    color: white;
+}
+i.fas.fa-user-plus{
+    padding: 10px;
+    background-color: rgb(83, 83, 83);
+    border: 1px solid white;
+    color: white;
+    font-size: 25px;
+}
+i.fas.fa-users{
+    padding: 10px;
+    background-color: rgb(83, 83, 83);
+    border: 1px solid white;
+    color: white;
+    font-size: 25px;
+} 
+.card-footer{
+    background-color: rgb(170, 170, 170);
+}
+.card-footer:hover{
+    background-color: rgb(226, 226, 226);
+}

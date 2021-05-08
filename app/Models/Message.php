@@ -14,10 +14,7 @@ class Message extends Model
     public function associates(){
         return $this->belongsTo(Associate::class, "user_id");
     }
-    public function client_individuals(){
-        return $this->belongsTo(ClientIndividual::class, "user_id");
-    }
-    public function client_corporations(){
-        return $this->belongsTo(ClientCorporation::class, "user_id");
+    public function clients(){
+        return $this->belongsTo(Client::class, "user_id");
     }
 }

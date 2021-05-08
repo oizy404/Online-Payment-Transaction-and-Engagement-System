@@ -11,10 +11,7 @@ class MessageClient extends Model
     
     protected $table = "message_clients";
 
-    public function client_individuals(){
-        return $this->belongsTo(ClientIndividual::class, "client_id");
-    }
-    public function client_corporations(){
-        return $this->belongsTo(ClientCorporation::class, "client_id");
+    public function clients(){
+        return $this->belongsTo(Client::class, "client_id");
     }
 }

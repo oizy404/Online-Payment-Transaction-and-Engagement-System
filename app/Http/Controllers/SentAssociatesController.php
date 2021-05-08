@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Admin;
 use App\Models\Associate;
 use App\Models\MessageAssociate;
-use App\Models\ClientCorporation;
-use App\Models\ClientIndividual;
+use App\Models\Client;
 use App\Models\MessageClient;
 use App\Models\Message;
 
