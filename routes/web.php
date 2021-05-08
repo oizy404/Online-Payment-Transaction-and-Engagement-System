@@ -29,8 +29,6 @@ Route::get('/', function () {
 });
 Route::view('/', 'pages.login')->name('login');
 Route::view('/admin-home', 'pages.admin-home')->name('admin-home');
-// Route::view('/create-client-account', 'pages.create-client-account')->name('create-client-account');
-// Route::view('/create-associate-account', 'pages.create-associate-account')->name('create-associate-account');
 
 Route::resource('clients', ClientController::class);
 Route::resource('associates', AssociateController::class);
