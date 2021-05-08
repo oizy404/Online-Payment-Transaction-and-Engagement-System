@@ -1,0 +1,33 @@
+.admin-navbar{
+    background-color: #ffffff;
+    border-bottom: 0.2px solid rgb(187, 187, 187);
+}
+i.fas.fa-bars{
+    font-size: 20px;
+}
+#companyicon{
+    margin-left: 20px;
+}
+.user-info{ 
+    display: inline-flex;
+    float: right;
+    margin-left: auto;
+}
+p#admin{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 134px;
+    color: black;
+}
+#btn-avatar{
+    width: 72px;
+}
+#user-avatar{
+    height: 35px;
+    width: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.side-chat-container{
+    padding: 20px;
+}

@@ -1,9 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar admin-navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-        <button id="btn-sidenav"><i class="fas fa-bars"></i></button>
-        <img src="images/bulanoicon.png" id="companyicon"alt="Company Icon" style="width: 140px">
+        <img src="images/bulanoblk.png" id="companyicon"alt="Company Icon" style="width: 130px">
             <div class="user-info">
-                <p>Genelyn Fckincata</p>
+                <p id="admin">Genelyn Fckincata</p>
                 <div class="btn-group">
                     <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="images/user.jpg" class="rounded-circle" id="user-avatar"><i class="fas fa-caret-down"></i>

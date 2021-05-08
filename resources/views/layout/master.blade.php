@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="{{asset('css/create_msg_associates.css')}}">
     <link rel="stylesheet" href="{{asset('css/create-client-account.css')}}">
     <link rel="stylesheet" href="{{asset('css/create-associate-account.css')}}">
+    <link rel="stylesheet" href="{{asset('css/admin-sidenav.css')}}">
+    <link rel="stylesheet" href="{{asset('css/admin-header.css')}}">
+
 </head>
 <body>
 
@@ -27,5 +30,6 @@
     <script src="{{asset('js/create_message.js')}}"></script>
     <script src="{{asset('js/create-client-account.js')}}"></script>
     <script src="{{asset('js/create-associate-account.js')}}"></script>
+    <!-- <script src="{{asset('js/admin-sidenav.js')}}"></script> -->
 </body>
 </html>

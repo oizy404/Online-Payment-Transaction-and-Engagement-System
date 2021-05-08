@@ -1,0 +1,22 @@
+.admin-side-nav{
+    background-color: #ffffff;
+    border-right: 0.2px solid rgb(187, 187, 187);
+    position: fixed;
+    padding: 0px;
+    height: 630px;
+    width: 228px;
+}
+.admin-side-nav a{
+    color: #59627D;
+    font-size: 20px;
+    text-decoration: none;
+}
+.admin-side-nav .mb-1{
+    padding-left: 20px;
+    padding-right: 10px;
+    border-bottom: 0.2px solid rgb(187, 187, 187);
+}
+#admin-dashboard{
+    color: #59627D;
+    font-size: 25px;
+}

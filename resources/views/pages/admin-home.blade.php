@@ -15,7 +15,7 @@
                     <center>
                     <div class="card-body">
                         <i class="fas fa-users rounded-circle"></i>
-                        <h5 class="card-title mt-2">Bulano Associates</h5>
+                        <h5 class="card-title mt-2">Bulano's Associates Accounts</h5>
                     </div>
                     </center>
                     <div class="card-footer">
@@ -28,7 +28,7 @@
                     <center>
                     <div class="card-body">
                         <i class="fas fa-users rounded-circle"></i>
-                        <h5 class="card-title mt-2">Bulano Clients</h5>
+                        <h5 class="card-title mt-2">Bulano's Clients Accounts</h5>
                     </div>
                     </center>
                     <div class="card-footer">
