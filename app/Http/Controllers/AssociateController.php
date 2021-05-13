@@ -9,7 +9,7 @@ class AssociateController extends Controller
 {
     public function index()
     {   
-        $associates = Associate::all(); //declared variable to store all the elements of the db
+        $associates = Associate::all(); //declared variable to store all the message of the associate to db
         return view("pages.admin-home")->with("associates", $associates);
     }
 
