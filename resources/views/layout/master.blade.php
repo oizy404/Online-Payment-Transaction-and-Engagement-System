@@ -27,6 +27,7 @@
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('js/sidenav.js')}}"></script>
+    <script src="{{asset('js/admin-sidenav.js')}}"></script>
     <script src="{{asset('js/create_message.js')}}"></script>
     <script src="{{asset('js/create-client-account.js')}}"></script>
     <script src="{{asset('js/create-associate-account.js')}}"></script>

@@ -1,4 +1,12 @@
-$("#btn-adminsidenav").click(function(){
+$("#btn-sidenav").click(function(){
     let value = $(this).html();
-    $(".admin-side-nav").toggle(300);
-})
+    $(".side-nav").toggle(300);
+});
+
+
+$(document).ready(function(){
+  $('.nav_btn').click(function(){
+    $('.mobile_nav_items').toggleClass('active');
+  });
+
+});
