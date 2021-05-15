@@ -27,6 +27,15 @@
                     <a href=""><i>Forgot your password?</i></a>
                     <button type="submit" class="form-control mt-1" id="btn-login"><b>LOGIN</b></button>
                 </form>
+                <!-- @if ($errors->any()) -->
+                    <div class="alert alert-warning d-flex align-items-center" role="alert" style="display:none">
+                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                        <div>
+                            {{$errors->first()}}
+                        </div>
+                    </div>
+                <!-- @endif -->
+                
             </div>
         </div>
 @stop

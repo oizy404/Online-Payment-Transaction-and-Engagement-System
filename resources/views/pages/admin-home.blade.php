@@ -3,10 +3,10 @@
 @section('title')
     Admin Home
 @stop
-@include('shared.admin-header')
-@include('shared.admin-sidenav')
+
 @section('content')
-    
+@include('shared.admin-header')
+@include('shared.admin-sidenav')   
 <div class="admin-dashboard">
     <div class="admindash-container">
         <div class="row mt-5" id="admin-dashcards">

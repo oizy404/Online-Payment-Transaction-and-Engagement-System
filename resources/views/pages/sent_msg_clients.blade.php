@@ -4,10 +4,10 @@
     Clients Sent Messages
 @stop
 
+@section('content')
 @include('shared.header')
 @include('shared.clients_sidenav')
 
-@section('content')
     <div class="row dashboard-body">
         <div class="col-2 side-chat-container">
             <h4>Chats...</h4>

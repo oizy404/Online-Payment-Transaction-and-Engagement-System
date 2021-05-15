@@ -25,10 +25,18 @@ use App\Model\Message;
 */
 
 Route::get('/', function () {
-    return view('layout.master');
+    return redirect()->route('login')->middleware('ifLoggedIn');
 });
-Route::view('/', 'pages.login')->name('login');
-Route::view('/admin-home', 'pages.admin-home')->name('admin-home');
+Route::get('/logout', function () {
+    Auth::logout();
+    return redirect()->route('login');
+});
+
+Route::middleware(['ifLoggedOut'])->group(function () { //group middleware
+
+    Route::view('/admin-home', 'pages.admin-home')->name('admin-home');
+    
+});
 
 Route::resource('clients', ClientController::class);
 Route::resource('associates', AssociateController::class);
