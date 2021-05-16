@@ -29,28 +29,13 @@ Route::get('/', function () {
     return view("pages.front");
 })->name('front')->middleware('ifLoggedIn');
 
-Route::post("authenticate", [loginController:: class, "login"])->name("login"); 
+Route::post("authenticate", [LoginController:: class, "login"])->name("login"); 
 
 Route::middleware(['ifLoggedOut'])->group(function (){
 
-Route::get('/admin-home', function(){
-    return view("pages.admin-home");
-})->name('admin-home');
-
-});
-
-//testing
-// Route::get('/test', function(){
-    
-//     $password ="test";
-
-//     echo Hash::make($password);
-
-// });
-
-Route::get('/logout', function(){
-    Auth:: logout();
-    return redirect()->route('pages.front');
+    Route::get('/admin-home', function(){
+        return view("pages.admin-home");
+    })->name('admin-home');
 
 });
 
@@ -62,3 +47,11 @@ Route::resource('message_associates', SentAssociatesController::class);
 
 Route::resource('inbox_message_associates', InboxClientsController::class);
 Route::resource('message_clients', SentClientsController::class);
+
+Route::post('/message_associates', [SentAssociatesController::class,'store'])->name("message_associates.store"); 
+
+
+Route::get('/logout', function(){
+    Auth:: logout();
+    return redirect()->route('pages.front');
+});

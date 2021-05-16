@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Admin;
 use App\Models\Associate;
 use App\Models\MessageAssociate;
 use App\Models\Client;
@@ -24,12 +23,19 @@ class SentAssociatesController extends Controller
 
     public function store(Request $request){
 
+        
+        $subject = $request->subject;
+        $image = $request->file('file');
+        $imageName = time().'.'.$image->extension();
+        $image->move(public_path('img_msgassociates'), $imageName);
+        
         $message_associate = new MessageAssociate();
-        $message_associate->subject = $request->subject;
-        $message_associate->message = $request->message;
+        $message_associate->subject = $subject;
+        $message_associate->msg_imagefile = $imageName;
+
         $message_associate->save();
 
-        return redirect()->route('message_associates.index');
+        return back()->with('msgassoc_added','Student Record has been inserted');
     }
 
     public function show($id){
