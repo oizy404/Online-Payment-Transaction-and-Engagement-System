@@ -26,8 +26,8 @@ use App\Model\Message;
 */
 
 Route::get('/', function () {
-    return view("login");
-})->name('login')->middleware('ifLoggedIn');
+    return view("pages.front");
+})->name('front')->middleware('ifLoggedIn');
 
 Route::post("authenticate", [LoginController:: class, "login"])->name("login"); 
 
@@ -41,7 +41,7 @@ Route::middleware(['ifLoggedOut'])->group(function () { //group middleware
 
 Route::get('/logout', function () {
     Auth::logout();
-    return redirect()->route('login');
+    return redirect()->route('pages.front');
 });
 
 Route::resource('clients', ClientController::class);
