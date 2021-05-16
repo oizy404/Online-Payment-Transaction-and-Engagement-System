@@ -10,7 +10,7 @@ class CheckIfLoggedOut{
     
     public function handle(Request $request, Closure $next){
         if(!Auth::check()){
-            return redirect()->route("pages.login");
+            return redirect()->route("login");
         }
         return $next($request);
     }

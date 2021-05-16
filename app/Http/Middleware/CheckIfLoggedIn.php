@@ -11,7 +11,7 @@ class CheckIfLoggedIn{
     public function handle(Request $request, Closure $next){
         
         if(Auth::check()){
-            return redirect()->route("pages.admin-home");
+            return redirect()->route("admin-home");
         }
         return $next($request);
     }

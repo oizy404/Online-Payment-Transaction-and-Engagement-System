@@ -26,20 +26,22 @@ use App\Model\Message;
 */
 
 Route::get('/', function () {
-    return view("pages.login");
+    return view("login");
 })->name('login')->middleware('ifLoggedIn');
 
 Route::post("authenticate", [LoginController:: class, "login"])->name("login"); 
 
 Route::middleware(['ifLoggedOut'])->group(function () { //group middleware
 
-    Route::view('/admin-home', 'pages.admin-home')->name('admin-home');
+    Route::get('/admin-home', function(){
+        return view("admin-home");
+    })->name('admin-home');
     
 });
 
 Route::get('/logout', function () {
     Auth::logout();
-    return redirect()->route('pages.login');
+    return redirect()->route('login');
 });
 
 Route::resource('clients', ClientController::class);
