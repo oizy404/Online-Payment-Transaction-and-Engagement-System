@@ -32,7 +32,7 @@
                 </thead>
                 <tbody>
                     @foreach ($message_associates as $message_associate)
-                        <tr>
+                        <tr class='clickable-row' data-href='url://'>
                             <td><input type="checkbox" id="msg-checkbox" name="msg-checkbox"></td>
                             <td>{{$message_associate->associate_id}}</td>
                             <td>{{$message_associate->subject}}</td>

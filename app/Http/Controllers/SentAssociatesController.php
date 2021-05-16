@@ -30,6 +30,7 @@ class SentAssociatesController extends Controller
         $image->move(public_path('img_msgassociates'), $imageName);
         
         $message_associate = new MessageAssociate();
+        $message_associate->associate_id = 1;
         $message_associate->subject = $subject;
         $message_associate->msg_imagefile = $imageName;
 
@@ -39,7 +40,9 @@ class SentAssociatesController extends Controller
     }
 
     public function show($id){
-        
+        $message_associate  = MessageAssociate::find($id);
+
+        return view('pages.task')->with("message_associate", $message_associate);
     }
 
     public function edit($id){

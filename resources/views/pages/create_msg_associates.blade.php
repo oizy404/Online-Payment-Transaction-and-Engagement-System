@@ -5,12 +5,8 @@
             <button id="btn-close"><i class="fas fa-times"></i></button>
         </div>
         <div class="card-body" style="padding: 0px">
-            @if(Session::has('msgassoc_added'))
-                <div class="alert alert-primary" role="alert">
-                    {{Session::get('msgassoc_added')}}
-                </div>
-            @endif
-            <form action="{{route('message_associates.store')}}" id="msg-form" method="post">
+            
+            <form action="{{route('message_associates.store')}}" id="msg-form" method="post" enctype="multipart/form-data">
                 @csrf
                 @method('post')
                 <input type="text" name="subject" id="subject" placeholder="Subject">
