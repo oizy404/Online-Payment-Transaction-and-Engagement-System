@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\Facades\Auth;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -11,7 +11,9 @@ class LoginController extends Controller
         $credentials = $request only('username','password');
 
         if (Auth::attempt($credentials)) {
-            return redirect()->route('admin-home');
+
+            return redirect()->route('pages.admin-home');
+
         }
         return back()->withErrors({
             "Invalid Login"

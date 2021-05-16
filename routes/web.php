@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AssociateController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\InboxClientsController;
@@ -25,17 +26,20 @@ use App\Model\Message;
 */
 
 Route::get('/', function () {
-    return redirect()->route('login')->middleware('ifLoggedIn');
-});
-Route::get('/logout', function () {
-    Auth::logout();
-    return redirect()->route('login');
-});
+    return view("pages.login");
+})->name('login')->middleware('ifLoggedIn');
+
+Route::post("authenticate", [LoginController:: class, "login"])->name("login"); 
 
 Route::middleware(['ifLoggedOut'])->group(function () { //group middleware
 
     Route::view('/admin-home', 'pages.admin-home')->name('admin-home');
     
+});
+
+Route::get('/logout', function () {
+    Auth::logout();
+    return redirect()->route('pages.login');
 });
 
 Route::resource('clients', ClientController::class);

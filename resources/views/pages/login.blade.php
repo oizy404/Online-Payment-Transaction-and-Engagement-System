@@ -10,7 +10,7 @@
                     <img src="images/bulanologo.png" class="center" id="companylogo"alt="Company Logo">
             </div>
             <div class="col login">
-                <form action="" id="login" method="post">
+                <form action="{{route('login')}}" id="login" method="post">
                     <center>
                         <h3>WELCOME</h3>
                     </center>
