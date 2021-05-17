@@ -59,3 +59,4 @@ td {
 #msg{
     width: 50%;
 }
+[data-href]{ cursor: pointer; }
