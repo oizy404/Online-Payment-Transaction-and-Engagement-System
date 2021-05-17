@@ -14,7 +14,9 @@
                     <option value="MANUAL">PAYING IN PHYSICAL BANK (MANUAL)</option>
                     <option value="EFPS">ELECTRONIC FILLING PAYMENT SYSTEM (EFPS)</option>
                 </select>
-                <textarea name="message" id="msg-body" cols="30" rows="10"></textarea>
+                <div class="previewImgclient">
+                    <img id="previewImgclient" alt="message image" style="max-width: 180px; margin-top:5px;">
+                </div>
                 <div class="msg-btns">
                     <input type="file" id="img" name="message" accept="file/*">
                     <button type="Add" class="btn" id="btn-send"><strong>Send</strong></button>

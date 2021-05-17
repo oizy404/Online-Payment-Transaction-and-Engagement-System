@@ -4,16 +4,16 @@
             <h6>New Message</h6>
             <button id="btn-close"><i class="fas fa-times"></i></button>
         </div>
-        <div class="card-body" style="padding: 0px">
-            
+        <div class="card-body" style="padding: 0px;">
             <form action="{{route('message_associates.store')}}" id="msg-form" method="post" enctype="multipart/form-data">
                 @csrf
                 @method('post')
                 <input type="text" name="subject" id="subject" placeholder="Subject">
-                <!-- <textarea name="message" id="msg-body" cols="30" rows="10"></textarea> -->
-                <img id="previewImg" alt="message image" style="max-width: 200px; margin-top:5px;">
+                <div class="previewImg">
+                    <img id="previewImg" alt="message image" style="max-width: 180px; margin-top:5px;">
+                </div>
                 <div class="msg-btns">
-                    <input type="file" class="form-control" id="img" name="file" onchange="previewFile(this)">
+                    <input type="file" id="img" name="file" onchange="previewFile(this)">
                     <button type="Add" class="btn" id="btn-send"><strong>Send</strong></button>
                 </div>
             </form>

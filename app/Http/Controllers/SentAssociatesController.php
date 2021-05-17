@@ -42,7 +42,7 @@ class SentAssociatesController extends Controller
     public function show($id){
         $message_associate  = MessageAssociate::find($id);
 
-        return view('pages.task')->with("message_associate", $message_associate);
+        return view('pages.show-msg-assoc')->with("message_associate", $message_associate);
     }
 
     public function edit($id){

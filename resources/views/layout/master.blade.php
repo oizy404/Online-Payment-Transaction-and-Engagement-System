@@ -30,9 +30,11 @@
     <script src="{{asset('js/sidenav.js')}}"></script>
     <script src="{{asset('js/admin-sidenav.js')}}"></script>
     <script src="{{asset('js/create_message.js')}}"></script>
+    <script src="{{asset('js/show-message.js')}}"></script>
     <script src="{{asset('js/previewFileMsg.js')}}"></script>
     <script src="{{asset('js/create-client-account.js')}}"></script>
     <script src="{{asset('js/create-associate-account.js')}}"></script>
     <!-- <script src="{{asset('js/admin-sidenav.js')}}"></script> -->
+    
 </body>
 </html>
