@@ -31,13 +31,13 @@ Route::get('/', function () {
 
 Route::post("authenticate", [LoginController:: class, "login"])->name("login"); 
 
-Route::middleware(['ifLoggedOut'])->group(function (){
+// Route::middleware(['ifLoggedOut'])->group(function (){
 
     Route::get('/admin-home', function(){
         return view("pages.admin-home");
     })->name('admin-home');
 
-});
+// });
 
 Route::resource('clients', ClientController::class);
 Route::resource('associates', AssociateController::class);
