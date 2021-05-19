@@ -60,6 +60,7 @@
                     <div class="card-footer card-clients">
                         Create<i class="fas fa-arrow-right" style="float: right;"></i>
                     </div>
+                    <p>Pangit</p>
                 </div>
             </div>
         </div>
