@@ -22,7 +22,6 @@ class SentAssociatesController extends Controller
     }
 
     public function store(Request $request){
-
         
         $subject = $request->subject;
         $image = $request->file('file');

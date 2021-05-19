@@ -27,7 +27,9 @@ class InboxAssociatesController extends Controller
     }
 
     public function show($id){
-        
+        $inbox_message_client  = MessageClient::find($id);
+
+        return view('pages.show-msg-clients')->with("inbox_message_client", $inbox_message_client);
     }
 
     public function edit($id){
@@ -39,6 +41,9 @@ class InboxAssociatesController extends Controller
     }
 
     public function destroy($id){
-         
+        $inbox_message_client = MessageClient::find($id);
+        $inbox_message_client->delete(); //delete a column
+
+        return redirect()->route('inbox_message_clients.index');
     }
 }

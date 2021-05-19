@@ -2,7 +2,7 @@
 @extends('layout.master')
 
 @section('title')
-    Show Sent Messages
+    Associates Sent Messages
 @stop
 
 @section('content')

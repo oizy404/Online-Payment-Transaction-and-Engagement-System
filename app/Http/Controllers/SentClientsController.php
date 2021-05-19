@@ -25,40 +25,26 @@ class SentClientsController extends Controller
 
     public function store(Request $request){
 
-        $message_client = new MessageClient();
-        $message_client->subject = $request->subject;
-        $message_client->mode_of_payment = $request->mode_of_payment;
-        // $message_client->message = $request->message;
+        $subject = $request->subject;
+        $image = $request->file('file');
+        $imageName = time().'.'.$image->extension();
+        $image->move(public_path('img_msgclients'), $imageName);
         
-        $size = $request->file('message')->getSize();
-        $name = $request->file('message')->getClientOrganizationalName();
-
-        $request->file('message')->storeAs('public/img_clients/', $name);
-        $photo = new MessageClient();
-        $photo->name = $name;
-        $photo->size = $size;
-        $photo->save();
-        return redirect()->route('message_client.index');
+        $message_client = new MessageClient();
+        $message_client->client_id = 1;
+        $message_client->subject = $subject;
+        $message_client->msg_imagefile = $imageName;
 
         $message_client->save();
 
-        return redirect()->route('message_clients.index');
-
-        
-        // $size = $request->file('message')->getSize();
-        // $name = $request->file('message')->getClientOrganizationalName();
-
-        // $request->file('message')->storeAs('public/img_clients/', $name);
-        // $photo = new MessageClient();
-        // $photo->name = $name;
-        // $photo->size = $size;
-        // $photo->save();
-        // return redirect()->route('message_client.index');
+        return back()->with('msgclient_added','Student Record has been inserted');
 
     }
 
     public function show($id){
-        
+        $message_client  = MessageClient::find($id);
+
+        return view('pages.show-sent-clients')->with("message_client", $message_client);
     }
 
     public function edit($id){
