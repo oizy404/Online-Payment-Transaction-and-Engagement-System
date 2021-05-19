@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{asset('css/header.css')}}">
     <link rel="stylesheet" href="{{asset('css/sidenav.css')}}">
     <link rel="stylesheet" href="{{asset('css/home_associates.css')}}">
-    <link rel="stylesheet" href="{{asset('css/show-messages.css')}}">
+    <link rel="stylesheet" href="{{asset('css/show-message.css')}}">
     <link rel="stylesheet" href="{{asset('css/create_msg_clients.css')}}">
     <link rel="stylesheet" href="{{asset('css/create_msg_associates.css')}}">
     <link rel="stylesheet" href="{{asset('css/create-client-account.css')}}">

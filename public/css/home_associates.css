@@ -16,49 +16,48 @@
     color: white;
 }
 .dashboard{
-    background-color: #333333;
+    background-color: #ffffff;
     height: 630px;
     overflow-y: scroll;
 }
 .msg-updates{
     padding: 3px;
 }
-.btn-delete{
-    background-color: transparent;
-    color: white;
-    border: none;
-    font-size: 20px;
+* {
+    box-sizing: border-box;
+}
+i:hover{
+    color: red;
+}
+.row {
+    margin-left:-5px;
+    margin-right:-5px;
+}
+.column.data {
     float: left;
-    margin-left: 30px;
-    margin-top: 5px;
+    width: 88%;
+    padding: 0px;
+    margin-left: 6px;
 }
-/* table{
-    font-family: Arial,Helvetica,Sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-    background-color: white;
+.column.updates {
+    float: left;
+    width: 10%;
+    padding: 0px;
 }
-#message td, #message th {
-    border: 1px solid #ddd;
-    padding: 3px;
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-th {
-      height: 40px;
-      background-color: #DFDDDC;
-}
-td {
-    height: 15px;
-    background-color: white;
-} */
 table {
-    border-collapse: collapse;
-    width: 100%;
     background-color: white;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 10px;
 }
-
 th, td {
     padding: 8px;
     text-align: left;
@@ -67,13 +66,16 @@ th, td {
 th{
     background-color: #DFDDDC;
 }
+tr.clickable-row:hover {background-color:#f5f5f5;}
 
-tr:hover {background-color:#f5f5f5;}
-
-#msg-checkbox{
-    width: 100%;
-}
-#msg{
-    width: 50%;
-}
 [data-href]{ cursor: pointer; }
+
+i.far{
+    font-size: 20px;
+    margin-left: 15px;
+}
+.btn-delete{
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}

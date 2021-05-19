@@ -54,6 +54,9 @@ class SentAssociatesController extends Controller
     }
 
     public function destroy($id){
-         
+        $message_associate = MessageAssociate::find($id);
+        $message_associate->delete(); //delete a column
+
+        return redirect()->route('message_associates.index');
     }
 }
