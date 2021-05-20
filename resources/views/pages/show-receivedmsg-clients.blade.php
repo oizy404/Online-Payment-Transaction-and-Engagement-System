@@ -14,7 +14,7 @@
     <div class="card-body">
         <p style="width: 50%"><strong>Subject: </strong>{{$inbox_message_client->subject}}</p>
         <p style="width: 50%"><strong>Mode of Payment: </strong>{{$inbox_message_client->mode_of_payment}}</p>
-        <div class="img-msg mt-4">
+        <div class="img-msg mt-2">
             <img src="{{asset('img_msgclients')}}/{{$inbox_message_client->msg_imagefile}}" alt="image msg" style="max-width:380px;">
         </div>
     </div>

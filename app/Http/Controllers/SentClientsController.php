@@ -25,7 +25,7 @@ class SentClientsController extends Controller
     public function store(Request $request){
 
         $subject = $request->subject;
-        $message_client = $request->$mode_of_payment;
+        $mode_of_payment = $request->mode_of_payment;
         $image = $request->file('file');
         $imageName = time().'.'.$image->extension();
         $image->move(public_path('img_msgclients'), $imageName);
