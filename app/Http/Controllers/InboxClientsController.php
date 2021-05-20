@@ -27,7 +27,9 @@ class InboxClientsController extends Controller
     }
 
     public function show($id){
-        
+        $inbox_message_associate  = MessageAssociate::find($id);
+
+        return view('pages.show_receivedmsg_associates')->with("inbox_message_associate", $inbox_message_associate);
     }
 
     public function edit($id){

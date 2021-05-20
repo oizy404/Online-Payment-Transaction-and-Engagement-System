@@ -2,7 +2,7 @@
 @extends('layout.master')
 
 @section('title')
-    Show Received Messages
+    Clients Received Messages
 @stop
 
 @section('content')

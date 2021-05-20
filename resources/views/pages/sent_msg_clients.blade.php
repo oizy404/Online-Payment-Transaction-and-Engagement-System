@@ -58,7 +58,7 @@
                                             </button>
                                         </form>
                                     </td>
-                                    <td><a href=""><i class="far fa-check-circle"></i></a></td>
+                                    <!-- <td><a href=""><i class="far fa-check-circle"></i></a></td> -->
                                     <!-- <i class="fas fa-check-circle"></i> -->
                                 </tr>
                             @endforeach
