@@ -44,7 +44,7 @@ class SentClientsController extends Controller
     public function show($id){
         $message_client  = MessageClient::find($id);
 
-        return view('pages.show-sent-clients')->with("message_client", $message_client);
+        return view('pages.show-sentmsg-clients')->with("message_client", $message_client);
     }
 
     public function edit($id){

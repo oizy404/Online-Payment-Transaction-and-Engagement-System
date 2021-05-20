@@ -5,7 +5,7 @@ Associates Received Messages
 @stop
 
 @section('content')
-@include('shared.header')
+@include('shared.header-assoc')
 @include('shared.assoc_sidenav')
 
 <div class="row dashboard-body">

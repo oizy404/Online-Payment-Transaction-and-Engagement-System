@@ -3,7 +3,7 @@
         <button id="btn-sidenav"><i class="fas fa-bars"></i></button>
         <img src="images/bulanoicon.png" id="companyicon"alt="Company Icon" style="width: 140px">
             <div class="user-info">
-                <p>Genelyn Fckincata</p>
+                <p>Associate: Genelyn Cata</p>
                 <div class="btn-group">
                     <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="images/user.jpg" class="rounded-circle" id="user-avatar"><i class="fas fa-caret-down"></i>

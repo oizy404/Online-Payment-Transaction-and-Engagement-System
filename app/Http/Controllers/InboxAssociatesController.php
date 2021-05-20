@@ -29,7 +29,7 @@ class InboxAssociatesController extends Controller
     public function show($id){
         $inbox_message_client  = MessageClient::find($id);
 
-        return view('pages.show-msg-clients')->with("inbox_message_client", $inbox_message_client);
+        return view('pages.show-receivedmsg-clients')->with("inbox_message_client", $inbox_message_client);
     }
 
     public function edit($id){

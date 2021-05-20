@@ -5,7 +5,7 @@
 @stop
 
 @section('content')
-@include('shared.header')
+@include('shared.header-clients')
 @include('shared.clients_sidenav')
 
 <div class="row dashboard-body">
