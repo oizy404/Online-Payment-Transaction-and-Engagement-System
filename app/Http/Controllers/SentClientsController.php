@@ -16,7 +16,6 @@ class SentClientsController extends Controller
     {
         $message_clients = MessageClient::all(); //declared variable to store all the elements of the db
         return view("pages.sent_msg_clients")->with("message_clients", $message_clients);
-        // return view("show_receivedmsg_associates", compact('message_clients'));
     }
 
     public function create(){
@@ -26,6 +25,7 @@ class SentClientsController extends Controller
     public function store(Request $request){
 
         $subject = $request->subject;
+        $message_client = $request->$mode_of_payment;
         $image = $request->file('file');
         $imageName = time().'.'.$image->extension();
         $image->move(public_path('img_msgclients'), $imageName);
@@ -33,6 +33,7 @@ class SentClientsController extends Controller
         $message_client = new MessageClient();
         $message_client->client_id = 1;
         $message_client->subject = $subject;
+        $message_client->mode_of_payment = $mode_of_payment;
         $message_client->msg_imagefile = $imageName;
 
         $message_client->save();

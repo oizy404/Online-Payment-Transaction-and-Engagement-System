@@ -5,7 +5,7 @@
             <button id="btn-close"><i class="fas fa-times"></i></button>
         </div>
         <div class="card-body" style="padding: 0px">
-            <form action="{{route('message_clients.store')}}" id="msg-formm" method="post">
+            <form action="{{route('message_clients.store')}}" id="msg-formm" method="post" enctype="multipart/form-data">
                 @csrf
                 @method('post')
                 <input type="text" name="subject" id="subject" placeholder="Subject">
@@ -18,7 +18,7 @@
                     <img id="previewImgclient" alt="message image" style="max-width: 180px; margin-top:5px;">
                 </div>
                 <div class="msg-btns">
-                    <input type="file" id="img" name="message" accept="file/*">
+                    <input type="file" id="img" name="file" onchange="previewImgclient(this)">
                     <button type="Add" class="btn" id="btn-send"><strong>Send</strong></button>
                 </div>
             </form>
