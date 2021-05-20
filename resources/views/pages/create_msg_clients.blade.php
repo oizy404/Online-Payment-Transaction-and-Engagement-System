@@ -14,11 +14,11 @@
                     <option value="MANUAL">PAYING IN PHYSICAL BANK (MANUAL)</option>
                     <option value="EFPS">ELECTRONIC FILLING PAYMENT SYSTEM (EFPS)</option>
                 </select>
-                <div class="previewImgclient">
-                    <img id="previewImgclient" alt="message image" style="max-width: 180px; margin-top:5px;">
+                <div class="previewImg">
+                    <img id="previewImg" alt="message image" style="max-width: 180px; margin-top:5px;">
                 </div>
                 <div class="msg-btns">
-                    <input type="file" id="img" name="file" onchange="previewImgclient(this)">
+                    <input type="file" id="img" name="file" onchange="previewImg(this)">
                     <button type="Add" class="btn" id="btn-send"><strong>Send</strong></button>
                 </div>
             </form>

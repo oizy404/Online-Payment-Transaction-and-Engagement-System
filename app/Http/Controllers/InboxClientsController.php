@@ -41,6 +41,9 @@ class InboxClientsController extends Controller
     }
 
     public function destroy($id){
-         
+        $inbox_message_associate = MessageAssociate::find($id);
+        $inbox_message_associate->delete(); //delete a column
+
+        return redirect()->route('inbox_message_associates.index');
     }
 }

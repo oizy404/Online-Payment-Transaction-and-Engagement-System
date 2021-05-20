@@ -57,6 +57,9 @@ class SentClientsController extends Controller
     }
 
     public function destroy($id){
-         
+        $message_client = MessageClient::find($id);
+        $message_client->delete(); //delete a column
+
+        return redirect()->route('message_clients.index');
     }
 }
