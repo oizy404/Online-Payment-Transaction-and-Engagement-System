@@ -20,7 +20,7 @@
                             <h5 class="card-title mt-2">Bulano's Associates Accounts</h5>
                         </div>
                         </center>
-                        <div class="card-footer">
+                        <div class="card-footer card-associnfo">
                             More Info...<i class="fas fa-arrow-right" style="float: right;"></i>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                                 <h5 class="card-title mt-2">Bulano's Clients Accounts</h5>
                             </div>
                             </center>
-                            <div class="card-footer">
+                            <div class="card-footer card-clientsinfo">
                                 More Info...<i class="fas fa-arrow-right" style="float: right;"></i>
                             </div>
                         </div>    
@@ -74,4 +74,5 @@
 </div>
 @include('pages.create-associate-account')
 @include('pages.create-client-account')
+@include('pages.show-assoc-accs')
 @stop
