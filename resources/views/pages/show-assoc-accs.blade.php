@@ -8,6 +8,7 @@
                 <th>Fullname</th>
                 <th>Username</th>
                 <th>Password</th>
+                <th>Reset</th>
             </tr>
         </thead>
         <tbody>
@@ -15,6 +16,7 @@
                 <td>Krishna Domael</td>
                 <td>krishna2</td>
                 <td>Password</td>
+                <td><i class="fas fa-unlock-alt"></i></td>
             </tr>
         </tbody>
     </table>
