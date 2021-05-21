@@ -6,13 +6,14 @@
             @csrf
             @method('post')
             <div class="mb-3">
-                <label for="fullname" class="form-label"><b>Fullname</b></label>
-                <input type="text" class="form-control" name="fullname">
+                <label for="file" class="form-label"><b>Upload File</b></label><br>
+                <!-- <input type="text" class="form-control" name="fullname"> -->
+                <input type="file" id="img" name="file" onchange="previewFile(this)">
             </div>
-            <div class="mb-3">
+            <!-- <div class="mb-3">
                 <label for="username" class="form-label"><b>Username</b></label>
                 <input type="text" class="form-control" name="username">
-            </div>
+            </div> -->
             <!-- <div class="mb-3">
                 <label for="birthday_corpcreated"><b>Birthday/Coporation Created</b></label>
                 <input type="date" class="form-control mt-2" name="birthday_corpcreated">
@@ -34,12 +35,12 @@
                 <label for="assoc" class="form-label"><b>Associate</b></label>
                 <input type="text" class="form-control" name="assoc">
             </div><br> -->
-            <div class="mb-3">
+            <!-- <div class="mb-3">
                 <label for="password" class="form-label"><b>Set Your Password</b></label>
                 <input type="password" class="form-control" name="password">
-            </div><br>
+            </div><br> -->
             <div class="mb-3">
-                <button type="Add" class="btn" id="btn-create">Create</button>
+                <button type="Add" class="btn" id="btn-create">UPLOAD</button>
             </div>
         </form>
     </div>

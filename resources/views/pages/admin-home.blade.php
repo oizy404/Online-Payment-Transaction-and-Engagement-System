@@ -46,7 +46,7 @@
                             <center>
                             <div class="card-body">
                                 <i class="fas fa-user-plus rounded-circle"></i>
-                                <h5 class="card-title mt-2">Create Associate Account</h5>
+                                <h5 class="card-title mt-2">Create User Account</h5>
                             </div>
                             </center>
                             <div class="card-footer card-assoc">
@@ -60,7 +60,7 @@
                         <center>
                         <div class="card-body">
                             <i class="fas fa-user-plus rounded-circle"></i>
-                            <h5 class="card-title mt-2">Create Client Account</h5>
+                            <h5 class="card-title mt-2">Create Batch Accounts</h5>
                         </div>
                         </center>
                         <div class="card-footer card-clients">
