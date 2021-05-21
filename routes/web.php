@@ -8,6 +8,7 @@ use App\Http\Controllers\InboxClientsController;
 use App\Http\Controllers\InboxAssociatesController;
 use App\Http\Controllers\SentAssociatesController;
 use App\Http\Controllers\SentClientsController;
+use App\Http\Controllers\AllMessagesController;
 
 use App\Model\Associate;
 use App\Model\MessageAssociate;

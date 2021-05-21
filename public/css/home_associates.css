@@ -4,12 +4,12 @@
     padding: 15px;
     height: 630px;
 }
-.side-chat-container h4{
-    background-color: #ddd;
+.side-chat-container{
+    background-color: rgb(221 221 221);;
 }
 .chat-con{
-    background-color: #5D5E5E;
-    padding: 15px 10px;
+    background-color: white;
+    padding: 10px 5px;
     height: 570px;
 }
 .side-chat-container p{

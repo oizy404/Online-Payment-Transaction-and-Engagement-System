@@ -19,7 +19,4 @@
         </div>
     </div>
 </div>
-@include('pages.create_msg_associates')
 @stop
-
-
