@@ -10,11 +10,11 @@ header{
   z-index: 1;
   top: 0;
   background: #2f323a;
-  margin-top: 70px;
+  margin-top: 65px;
   padding-top: 30px;
   position: fixed;
   left: 0;
-  width: 250px;
+  width: 240px;
   height: 100% ;
   transition: 0.5s;
   transition-property: left;
@@ -71,7 +71,8 @@ label #sidebar_btn{
   color: rgb(5, 5, 5);
   position: fixed;
   cursor: pointer;
-  left: 300px;
+  left: 20px;
+  top: 20px;
   font-size: 20px;
   margin: 5px 0;
   transition: 0.5s;
@@ -97,9 +98,9 @@ label #sidebar_btn:hover{
 }
 .content{
   width: (100% - 150px);
-   margin-top: 60px;
-   padding: 10px;
-   margin-left: 100px;
+   /* margin-top: 60px; */
+   /* padding: 10px; */
+   margin-left: 150px;
    height: 100px;
    transition: 0.5s;
  }

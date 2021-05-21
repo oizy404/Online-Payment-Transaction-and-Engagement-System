@@ -7,7 +7,7 @@
 <!--mobile navigation bar start-->
 <div class="mobile_nav">
       <div class="nav_bar">
-      <img src="images/user.jpg" class="rounded-circle" id="user-avatar" class="mobile_profile_image" alt="">
+      <!-- <img src="images/user.jpg" class="rounded-circle" id="user-avatar" class="mobile_profile_image" alt=""> -->
         <i class="fa fa-bars nav_btn"></i>
       </div>
         <div class="mobile_nav_items">
@@ -25,10 +25,10 @@
     <!--mobile navigation bar end-->
     <!--sidebar start-->
     <div class="sidebar">
-      <div class="profile_info">
+      <!-- <div class="profile_info">
       <img src="images/user.jpg" class="rounded-circle" id="user-avatar">
         <h4>Genelyn Pretty</h4>
-      </div>
+      </div> -->
             <a href="#" id="admin-dashboard"> <i class="fas fa-home"></i><span>Dashboard</span></a><br>
             
             <a href="#"><i class="fa fa-users"></i><span>Associates</span></a><br>

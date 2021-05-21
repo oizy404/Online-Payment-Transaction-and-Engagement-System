@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <img src="images/bulanoblk.png" id="companyicon"alt="Company Icon" style="width: 130px">
             <div class="user-info">
-                <p id="admin">Genelyn Fckincata</p>
+                <p id="admin">Mr. Lincoln Bulano</p>
                 <div class="btn-group">
                     <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="images/user.jpg" class="rounded-circle" id="user-avatar"><i class="fas fa-caret-down"></i>
