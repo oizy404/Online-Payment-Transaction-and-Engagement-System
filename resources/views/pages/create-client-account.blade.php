@@ -10,6 +10,10 @@
                 <input type="text" class="form-control" name="fullname">
             </div>
             <div class="mb-3">
+                <label for="username" class="form-label"><b>Username</b></label>
+                <input type="text" class="form-control" name="username">
+            </div>
+            <!-- <div class="mb-3">
                 <label for="birthday_corpcreated"><b>Birthday/Coporation Created</b></label>
                 <input type="date" class="form-control mt-2" name="birthday_corpcreated">
             </div>
@@ -29,7 +33,7 @@
             <div class="mb-3">
                 <label for="assoc" class="form-label"><b>Associate</b></label>
                 <input type="text" class="form-control" name="assoc">
-            </div><br>
+            </div><br> -->
             <div class="mb-3">
                 <label for="password" class="form-label"><b>Set Your Password</b></label>
                 <input type="password" class="form-control" name="password">

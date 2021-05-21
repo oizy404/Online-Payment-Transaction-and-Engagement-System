@@ -75,4 +75,5 @@
 @include('pages.create-associate-account')
 @include('pages.create-client-account')
 @include('pages.show-assoc-accs')
+@include('pages.show-clients-accs')
 @stop
