@@ -1,5 +1,5 @@
 .admin-navbar{
-    background-color: #ffffff;
+    background-color: rgba(var(--d87,255,255,255),1);
     border-bottom: 0.2px solid rgb(187, 187, 187);
 }
 i.fas.fa-bars{
