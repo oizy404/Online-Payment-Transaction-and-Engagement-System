@@ -10,7 +10,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-lg-end">
                         <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        <li><a class="dropdown-item" href="/logout">Log Out</a></li>
                     </ul>
                 </div>
             </div>

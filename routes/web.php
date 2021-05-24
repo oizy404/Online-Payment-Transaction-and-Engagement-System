@@ -30,15 +30,15 @@ Route::get('/', function () {
     return view("pages.front");
 })->name('front')->middleware('ifLoggedIn');
 
-Route::post("authenticate", [LoginController:: class, "login"])->name("login"); 
+Route::post("authenticate", [LoginController::class, "login"])->name("login"); 
 
-// Route::middleware(['ifLoggedOut'])->group(function (){
+Route::middleware(['ifLoggedOut'])->group(function (){
+    
+Route::get('/admin-home', function(){
+    return view("pages.admin-home");
+})->name('admin-home');
 
-    Route::get('/admin-home', function(){
-        return view("pages.admin-home");
-    })->name('admin-home');
-
-// });
+});
 
 Route::resource('clients', ClientController::class);
 Route::resource('associates', AssociateController::class);
@@ -52,7 +52,8 @@ Route::resource('message_clients', SentClientsController::class);
 Route::post('/message_associates', [SentAssociatesController::class,'store'])->name("message_associates.store"); 
 
 
+
 Route::get('/logout', function(){
-    Auth:: logout();
-    return redirect()->route('pages.front');
+    Auth::logout();
+    return redirect()->route('front');
 });
