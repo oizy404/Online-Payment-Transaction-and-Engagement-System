@@ -34,24 +34,19 @@ Route::post("authenticate", [LoginController::class, "login"])->name("login");
 
 Route::middleware(['ifLoggedOut'])->group(function (){
     
-Route::get('/admin-home', function(){
-    return view("pages.admin-home");
-})->name('admin-home');
+    Route::get('/admin-home', function(){
+        return view("pages.admin-home");
+    })->name('admin-home');
 
 });
 
 Route::resource('clients', ClientController::class);
 Route::resource('associates', AssociateController::class);
-
 Route::resource('inbox_message_clients', InboxAssociatesController::class);
 Route::resource('message_associates', SentAssociatesController::class);
-
 Route::resource('inbox_message_associates', InboxClientsController::class);
 Route::resource('message_clients', SentClientsController::class);
-
 Route::post('/message_associates', [SentAssociatesController::class,'store'])->name("message_associates.store"); 
-
-
 
 Route::get('/logout', function(){
     Auth::logout();
