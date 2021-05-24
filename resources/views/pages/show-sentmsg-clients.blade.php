@@ -15,7 +15,7 @@
         <p style="width: 50%"><strong>Subject: </strong>{{$message_client->subject}}</p>
         <p style="width: 50%"><strong>Mode of Payment: </strong>{{$message_client->mode_of_payment}}</p>
         <div class="img-msg mt-4">
-            <img src="{{asset('img_msgclients')}}/{{$message_client->msg_imagefile}}" alt="image msg" style="max-width:380px;">
+            <img src="{{asset('img_msgclients')}}/{{$message_client->msg_imagefile}}" id="image-msg" alt="image msg" style="max-width:380px;">
         </div>
     </div>
 </div>

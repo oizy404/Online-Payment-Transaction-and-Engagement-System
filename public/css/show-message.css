@@ -12,3 +12,6 @@
     float:right;
     color: white;
 }
+#image-msg{
+    cursor: pointer;
+}

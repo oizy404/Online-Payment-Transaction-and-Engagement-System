@@ -26,6 +26,7 @@ class SentClientsController extends Controller
 
         $subject = $request->subject;
         $mode_of_payment = $request->mode_of_payment;
+        
         $image = $request->file('file');
         $imageName = time().'.'.$image->extension();
         $image->move(public_path('img_msgclients'), $imageName);

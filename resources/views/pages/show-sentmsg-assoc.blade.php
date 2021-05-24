@@ -14,7 +14,7 @@
     <div class="card-body">
         <p style="width: 50%"><strong>Subject: </strong>{{$message_associate->subject}}</p>
         <div class="img-msg mt-4">
-            <img src="{{asset('img_msgassociates')}}/{{$message_associate->msg_imagefile}}" alt="image msg" style="max-width:380px;">
+            <img src="{{asset('img_msgassociates')}}/{{$message_associate->msg_imagefile}}" id="image-msg" alt="image msg" style="max-width:380px;">
         </div>
     </div>
 </div>
