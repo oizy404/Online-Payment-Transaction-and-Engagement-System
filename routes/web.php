@@ -30,33 +30,14 @@ Route::get('/', function () {
     return view("pages.front");
 })->name('front')->middleware('ifLoggedIn');
 
-<<<<<<< Updated upstream
 Route::post("authenticate", [LoginController::class, "login"])->name("login"); 
-=======
-Route::post("authenticate", [LoginController:: class, "login"])->name("login"); 
-
-Route::middleware(['ifLoggedOut'])->group(function (){
->>>>>>> Stashed changes
 
 Route::middleware(['ifLoggedOut'])->group(function (){
     
     Route::get('/admin-home', function(){
         return view("pages.admin-home");
     })->name('admin-home');
-
-<<<<<<< Updated upstream
 });
-
-Route::resource('clients', ClientController::class);
-Route::resource('associates', AssociateController::class);
-Route::resource('inbox_message_clients', InboxAssociatesController::class);
-Route::resource('message_associates', SentAssociatesController::class);
-Route::resource('inbox_message_associates', InboxClientsController::class);
-Route::resource('message_clients', SentClientsController::class);
-Route::post('/message_associates', [SentAssociatesController::class,'store'])->name("message_associates.store"); 
-
-=======
-
 
     Route::resource('clients', ClientController::class);
     Route::resource('associates', AssociateController::class);
@@ -68,9 +49,7 @@ Route::post('/message_associates', [SentAssociatesController::class,'store'])->n
     Route::resource('message_clients', SentClientsController::class);
 
     Route::post('/message_associates', [SentAssociatesController::class,'store'])->name("message_associates.store"); 
-});
 
->>>>>>> Stashed changes
 Route::get('/logout', function(){
     Auth::logout();
     return redirect()->route('front');

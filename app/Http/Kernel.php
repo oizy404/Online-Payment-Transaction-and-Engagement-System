@@ -65,11 +65,6 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-<<<<<<< Updated upstream
         'ifLoggedIn' => \App\Http\Middleware\CheckIfLoggedIn::class,
-=======
-        'ifLoggedIn'=> \App\Http\Middleware\CheckIfLoggedIn::class,
-        'ifLoggedOut' => \App\Http\Middleware\CheckIfLoggedOut::class,
->>>>>>> Stashed changes
     ];
 }
