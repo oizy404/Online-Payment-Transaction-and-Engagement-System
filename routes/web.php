@@ -34,7 +34,7 @@ Route::post("authenticate", [LoginController::class, "login"])->name("login");
 
 Route::middleware(['ifLoggedOut'])->group(function () {
     
-    Route::get('admin-home', function(){
+    Route::get('/admin-home', function(){
         return view("pages.admin-home");
     })->name('admin-home');
 
@@ -54,3 +54,12 @@ Route::get('logout', function (){
     Route::resource('message_clients', SentClientsController::class);
 
     Route::post('/message_associates', [SentAssociatesController::class,'store'])->name("message_associates.store"); 
+
+
+    // Route::get('/test', function(){
+    
+    //         $password ="nimda";
+        
+    //         echo Hash::make($password);
+        
+    //     });
