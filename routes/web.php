@@ -26,21 +26,25 @@ use App\Model\Message;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function(){
     return view("pages.front");
 })->name('front')->middleware('ifLoggedIn');
 
 Route::post("authenticate", [LoginController::class, "login"])->name("login"); 
 
-
 Route::middleware(['ifLoggedOut'])->group(function (){
     
-    Route::get('/admin-home', function(){
+    Route::get('admin-home', function(){
         return view("pages.admin-home");
     })->name('admin-home');
 
     Route::resource('clients', ClientController::class);
     Route::resource('associates', AssociateController::class);
+});
+
+Route::get('logout', function(){
+    Auth::logout();
+    return redirect()->route('front');
 });
 
     Route::resource('inbox_message_clients', InboxAssociatesController::class);
@@ -50,8 +54,3 @@ Route::middleware(['ifLoggedOut'])->group(function (){
     Route::resource('message_clients', SentClientsController::class);
 
     Route::post('/message_associates', [SentAssociatesController::class,'store'])->name("message_associates.store"); 
-
-Route::get('/logout', function(){
-    Auth::logout();
-    return redirect()->route('front');
-});
