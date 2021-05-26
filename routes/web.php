@@ -38,10 +38,10 @@ Route::middleware(['ifLoggedOut'])->group(function (){
     Route::get('/admin-home', function(){
         return view("pages.admin-home");
     })->name('admin-home');
-});
 
     Route::resource('clients', ClientController::class);
     Route::resource('associates', AssociateController::class);
+});
 
     Route::resource('inbox_message_clients', InboxAssociatesController::class);
     Route::resource('message_associates', SentAssociatesController::class);
