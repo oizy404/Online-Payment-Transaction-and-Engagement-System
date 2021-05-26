@@ -40,12 +40,6 @@ Route::middleware(['ifLoggedOut'])->group(function () {
 
     Route::resource('clients', ClientController::class);
     Route::resource('associates', AssociateController::class);
-});
-
-Route::get('logout', function (){
-    Auth::logout();
-    return redirect()->route('front');
-});
 
     Route::resource('inbox_message_clients', InboxAssociatesController::class);
     Route::resource('message_associates', SentAssociatesController::class);
@@ -54,8 +48,14 @@ Route::get('logout', function (){
     Route::resource('message_clients', SentClientsController::class);
 
     Route::post('/message_associates', [SentAssociatesController::class,'store'])->name("message_associates.store"); 
+});
 
+    
 
+    Route::get('logout', function (){
+        Auth::logout();
+        return redirect()->route('front');
+    });
     // Route::get('/test', function(){
     
     //         $password ="nimda";
