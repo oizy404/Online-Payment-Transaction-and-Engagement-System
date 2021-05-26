@@ -26,13 +26,13 @@ use App\Model\Message;
 |
 */
 
-Route::get('/', function(){
+Route::get('/', function (){
     return view("pages.front");
 })->name('front')->middleware('ifLoggedIn');
 
 Route::post("authenticate", [LoginController::class, "login"])->name("login"); 
 
-Route::middleware(['ifLoggedOut'])->group( function(){
+Route::middleware(['ifLoggedOut'])->group(function () {
     
     Route::get('admin-home', function(){
         return view("pages.admin-home");
@@ -42,7 +42,7 @@ Route::middleware(['ifLoggedOut'])->group( function(){
     Route::resource('associates', AssociateController::class);
 });
 
-Route::get('logout', function(){
+Route::get('logout', function (){
     Auth::logout();
     return redirect()->route('front');
 });

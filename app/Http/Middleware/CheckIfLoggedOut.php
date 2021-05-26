@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 class CheckIfLoggedOut{
     
     public function handle(Request $request, Closure $next){
+        
         if(!Auth::check()){
             return redirect()->route('front');
         }
