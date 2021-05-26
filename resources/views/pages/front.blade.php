@@ -25,7 +25,7 @@
                         <input type="password" class="form-control" name="password">
                     </div><br>
                     <a href=""><i>Forgot your password?</i></a>
-                    <button type="submit" class="form-control mt-1" id="btn-login"><b>LOGIN</b></button>
+                    <button type="submit" value="Login" class="form-control mt-1" id="btn-login"><b>LOGIN</b></button>
                 </form>
                 <!-- @if ($errors->any()) -->
                     <div class="alert alert-warning d-flex align-items-center" role="alert" style="display:none">
