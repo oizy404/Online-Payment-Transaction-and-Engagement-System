@@ -30,7 +30,7 @@
                         </thead>
                         <tbody>
                             @foreach($message_clients as $message_client)
-                                <tr class='clickable-row' data-href="{{route('message_clients.show', $message_client->id)}}">
+                                <tr class='clickable-row' data-href="{{route('msg-clients', $message_client->id)}}">
                                 <td>{{$message_client->client_id}}</td>
                                 <td>{{$message_client->subject}}</td>
                                 <td>{{$message_client->created_at}}</td>
@@ -50,13 +50,7 @@
                             @foreach($message_clients as $message_client)
                                 <tr>
                                     <td>
-                                        <form action="{{route('message_clients.destroy', $message_client->id)}}" method="post">
-                                            @csrf 
-                                            @method('delete')
-                                            <button class="btn-delete" type="submit"onclick="return confirm(' Are you sure you want to delete this event?')">
-                                                <i class="far fa-trash-alt"></i>
-                                            </button>
-                                        </form>
+                                    <a href="{{route('delete', $message_client->id)}}">Delete</a>
                                     </td>
                                     <!-- <td><a href=""><i class="far fa-check-circle"></i></a></td> -->
                                     <!-- <i class="fas fa-check-circle"></i> -->

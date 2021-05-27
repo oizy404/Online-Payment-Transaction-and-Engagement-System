@@ -23,17 +23,17 @@ Associates Received Messages
                     <table id="message">
                         <thead>
                             <tr>
-                                <th id="from">From</th>
+                                <th id="from">To</th>
                                 <th id="msg">Message</th>
-                                <th id="received">Received</th>
+                                <th id="received">Sent</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($inbox_message_clients as $inbox_message_client)
-                                <tr class='clickable-row' data-href="{{route('inbox_message_clients.show', $inbox_message_client->id)}}">
-                                <td>{{$inbox_message_client->client_id}}</td>
-                                <td>{{$inbox_message_client->subject}}</td>
-                                <td>{{$inbox_message_client->created_at}}</td>
+                            @foreach($assoc_inbox_msgs as $assoc_inbox_msg)
+                                <tr class='clickable-row' data-href="{{route('inbox-assoc', $assoc_inbox_msg->id)}}">
+                                <td>{{$assoc_inbox_msg->client_id}}</td>
+                                <td>{{$assoc_inbox_msg->subject}}</td>
+                                <td>{{$assoc_inbox_msg->created_at}}</td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -44,22 +44,15 @@ Associates Received Messages
                         <thead>
                             <tr>
                                 <th>Delete</th>
-                                <th>Done</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($inbox_message_clients as $inbox_message_client)
+                            @foreach($assoc_inbox_msgs as $assoc_inbox_msg)
                                 <tr>
                                     <td>
-                                        <form action="{{route('inbox_message_clients.destroy', $inbox_message_client->id)}}" method="post">
-                                            @csrf 
-                                            @method('delete')
-                                            <button class="btn-delete" type="submit"onclick="return confirm(' Are you sure you want to delete this event?')">
-                                                <i class="far fa-trash-alt"></i>
-                                            </button>
-                                        </form>
+                                    <a href="#">Delete</a>
                                     </td>
-                                    <td><a href=""><i class="far fa-check-circle"></i></a></td>
+                                    <!-- <td><a href=""><i class="far fa-check-circle"></i></a></td> -->
                                     <!-- <i class="fas fa-check-circle"></i> -->
                                 </tr>
                             @endforeach

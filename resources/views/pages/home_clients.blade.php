@@ -29,11 +29,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($inbox_message_associates as $inbox_message_associate)
-                                <tr class='clickable-row' data-href="{{route('inbox_message_associates.show', $inbox_message_associate->id)}}">
-                                    <td>{{$inbox_message_associate->associate_id}}</td>
-                                    <td>{{$inbox_message_associate->subject}}</td>
-                                    <td>{{$inbox_message_associate->created_at}}</td>
+                            @foreach ($clients_inbox_msgs as $clients_inbox_msg)
+                                <tr class='clickable-row' data-href="{{route('inbox-clients', $clients_inbox_msg->id)}}">
+                                    <td>{{$clients_inbox_msg->associate_id}}</td>
+                                    <td>{{$clients_inbox_msg->subject}}</td>
+                                    <td>{{$clients_inbox_msg->created_at}}</td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -48,16 +48,10 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($inbox_message_associates as $inbox_message_associate)
+                            @foreach ($clients_inbox_msgs as $clients_inbox_msg)
                                 <tr>
                                     <td>
-                                        <form action="{{route('inbox_message_associates.destroy', $inbox_message_associate->id)}}" method="post">
-                                            @csrf 
-                                            @method('delete')
-                                            <button class="btn-delete" type="submit"onclick="return confirm(' Are you sure you want to delete this event?')">
-                                                <i class="far fa-trash-alt"></i>
-                                            </button>
-                                        </form>
+                                        Delete
                                     </td>
                                     <td><a href=""><i class="far fa-check-circle"></i></a></td>
                                     <!-- <i class="fas fa-check-circle"></i> -->

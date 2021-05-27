@@ -5,7 +5,7 @@
             <button id="btn-close"><i class="fas fa-times"></i></button>
         </div>
         <div class="card-body" style="padding: 0px;">
-            <form action="{{route('message_associates.store')}}" id="msg-form" method="post" enctype="multipart/form-data">
+            <form action="{{route('create-msg-assoc')}}" id="msg-form" method="post" enctype="multipart/form-data">
                 @csrf
                 @method('post')
                 <input type="text" name="subject" id="subject" placeholder="Subject">

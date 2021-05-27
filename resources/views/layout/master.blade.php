@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{asset('css/show-clients-accounts.css')}}">
     <link rel="stylesheet" href="{{asset('css/admin-sidenav.css')}}">
     <link rel="stylesheet" href="{{asset('css/admin-header.css')}}">
+    <link rel="stylesheet" href="{{asset('css/payment.css')}}">
 
 </head>
 <body>
@@ -29,7 +30,6 @@
     
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('js/login.js')}}"></script>
     <script src="{{asset('js/sidenav.js')}}"></script>
     <script src="{{asset('js/admin-sidenav.js')}}"></script>
     <script src="{{asset('js/create_message.js')}}"></script>
@@ -39,7 +39,7 @@
     <script src="{{asset('js/create-associate-account.js')}}"></script>
     <script src="{{asset('js/show-associates-accounts.js')}}"></script>
     <script src="{{asset('js/show-clients-accounts.js')}}"></script>
-    <!-- <script src="{{asset('js/show-associates-accounts.js')}}"></script> -->
+    <script src="{{asset('js/payment.js')}}"></script>
     
 </body>
 </html>

@@ -30,7 +30,7 @@
                         </thead>
                         <tbody>
                             @foreach ($message_associates as $message_associate)
-                                <tr class='clickable-row' data-href="{{route('message_associates.show', $message_associate->id)}}">
+                                <tr class='clickable-row' data-href="{{route('msg-assoc', $message_associate->id)}}">
                                     <td>{{$message_associate->associate_id}}</td>
                                     <td>{{$message_associate->subject}}</td>
                                     <td>{{$message_associate->created_at}}</td>
@@ -51,13 +51,7 @@
                             @foreach ($message_associates as $message_associate)
                                 <tr>
                                     <td>
-                                        <form action="{{route('message_associates.destroy', $message_associate->id)}}" method="post">
-                                            @csrf 
-                                            @method('delete')
-                                            <button class="btn-delete" type="submit"onclick="return confirm(' Are you sure you want to delete this event?')">
-                                                <i class="far fa-trash-alt"></i>
-                                            </button>
-                                        </form>
+                                        <a href="{{route('delete', $message_associate->id)}}">Delete</a>
                                     </td>
                                     <!-- <td><a href=""><i class="far fa-check-circle"></i></a></td> -->
                                     <!-- <i class="fas fa-check-circle"></i> -->
