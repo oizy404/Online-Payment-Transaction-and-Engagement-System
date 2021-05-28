@@ -1,44 +1,80 @@
 <div class="payment">
-    <div class="col-md-6 offset-md-3 mt-5 rounded" id="mode-payment" style="background-color: white;">
-        <div class="row">
+    <div class="col-md-10 offset-md-1 mt-5 rounded" id="mode-payment" style="background-color: white;">
+        <div class="row" >
             <div class="col">
-                <h5 style="float:right;"><a href="#">E-WALLET</a></h5>
+                <h5 style="float:right;"><a href="#">ELECTRONIC WALLET</a></h5>
             </div>
             <div class="col">
                 <h5><a href="#">ONLINE BANKING</a></h5>
             </div>
-        </div>
         <div>
-        <div class="row">
-            <div class="col">
-                <img src="images/gcash.jpg" alt="gcash logo">
+<!-- ELECTRONIC WALLET -->
+        <div class="row mt-5">
+            <div class="col-md-4 offset-md-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="{{ URL('storage/gcash.jpg') }}" alt="gcash logo" width="150px">
+                    </div>
+                    <div class="card-footer">
+                        Proceed
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <img src="images/paypal.jpg" alt="paypal logo">
+            <div class="col-md-4 offset-md-2">
+                <div class="card">
+                    <div class="card-body">      
+                        <img src="{{ URL('storage/paypal.jpg') }}" alt="paypal logo" width="150px">
+                    </div>
+                    <div class="card-footer">
+                        Proceed
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- <div class="row">
-            <div class="col-md-4">
+<!-- ONLINE BANKING-->
+        <div class="row mt-5">
+            <div class="col-md-4 offset-md-1">
                 <div class="card">
                     <div class="card-body">
-                        GCASH
+                        <img src="{{ URL('storage/SecurityBank.png') }}" alt="SecurityBank logo" width="300px">
                     </div>
-                    <div class="card-footer card-associnfo">
+                    <div class="card-footer">
                         Proceed
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 offset-md-2">
                 <div class="card">
-                    <div class="card-body">
-                        PAYPAL
+                    <div class="card-body">      
+                        <img src="{{ URL('storage/Landbank.png') }}" alt="Landbank logo" width="300px">
                     </div>
-                    <div class="card-footer card-associnfo">
+                    <div class="card-footer">
                         Proceed
                     </div>
                 </div>
-            </div><br>
-            <button id="btn-paymentcancel">Back</button>
-        </div> -->
+            </div>
+            <div class="col-md-4 offset-md-1 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="{{ URL('storage/UCPB.png') }}" alt="UCPB logo" width="300px">
+                    </div>
+                    <div class="card-footer">
+                        Proceed
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-2 mt-4">
+                <div class="card">
+                    <div class="card-body">      
+                        <img src="{{ URL('storage/RCBC.png') }}" alt="RCBC logo" width="300px">
+                    </div>
+                    <div class="card-footer">
+                        Proceed
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+            <button class="btn-success" id="btn-paymentcancel">Back</button>
     </div>
 </div>

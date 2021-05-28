@@ -5,4 +5,4 @@ $(document).ready(function(){
     $("#btn-paymentcancel").click(function(){
         $(".payment").fadeOut(500);
     });
-})
+});

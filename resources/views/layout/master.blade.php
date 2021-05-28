@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{asset('css/sidenav.css')}}">
     <link rel="stylesheet" href="{{asset('css/home_associates.css')}}">
     <link rel="stylesheet" href="{{asset('css/show-message.css')}}">
+    <!-- <link rel="stylesheet" href="{{asset('css/show-receivedmsg-clients.css')}}"> -->
     <link rel="stylesheet" href="{{asset('css/create_msg_clients.css')}}">
     <link rel="stylesheet" href="{{asset('css/create_msg_associates.css')}}">
     <link rel="stylesheet" href="{{asset('css/create-client-account.css')}}">
@@ -34,12 +35,15 @@
     <script src="{{asset('js/admin-sidenav.js')}}"></script>
     <script src="{{asset('js/create_message.js')}}"></script>
     <script src="{{asset('js/show-message.js')}}"></script>
+    <!-- <script src="{{asset('js/show-receivedmsg-clients.js')}}"></script> -->
+    <script src="{{asset('js/payment.js')}}"></script>
     <script src="{{asset('js/previewFileMsg.js')}}"></script>
+
     <script src="{{asset('js/create-client-account.js')}}"></script>
     <script src="{{asset('js/create-associate-account.js')}}"></script>
     <script src="{{asset('js/show-associates-accounts.js')}}"></script>
     <script src="{{asset('js/show-clients-accounts.js')}}"></script>
-    <script src="{{asset('js/payment.js')}}"></script>
+    
     
 </body>
 </html>
