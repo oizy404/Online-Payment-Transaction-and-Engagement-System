@@ -18,3 +18,9 @@
 div #mode-payment{
     padding: 20px;
 }
+h5#e-walletbtn{
+    cursor: pointer;
+}
+h5#o-bankingbtn{
+    cursor: pointer;
+}

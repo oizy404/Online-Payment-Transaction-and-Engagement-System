@@ -2,14 +2,14 @@
     <div class="col-md-10 offset-md-1 mt-5 rounded" id="mode-payment" style="background-color: white;">
         <div class="row" >
             <div class="col">
-                <h5 style="float:right;"><a href="#">ELECTRONIC WALLET</a></h5>
+                <h5 id="e-walletbtn" style="float:right;">ELECTRONIC WALLET</h5>
             </div>
             <div class="col">
-                <h5><a href="#">ONLINE BANKING</a></h5>
+                <h5 id="o-bankingbtn">ONLINE BANKING</h5>
             </div>
         <div>
 <!-- ELECTRONIC WALLET -->
-        <div class="row mt-5">
+        <div class="row mt-5" id="e-walletrow">
             <div class="col-md-4 offset-md-1">
                 <div class="card">
                     <div class="card-body">
@@ -32,7 +32,7 @@
             </div>
         </div>
 <!-- ONLINE BANKING-->
-        <div class="row mt-5">
+        <div class="row mt-5" id="o-bankingrow" style="display:none;">
             <div class="col-md-4 offset-md-1">
                 <div class="card">
                     <div class="card-body">
