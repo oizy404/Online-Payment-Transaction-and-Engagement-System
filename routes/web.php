@@ -49,6 +49,7 @@ Route::post("authenticate", [LoginController::class, "login"])->name("login");
     Route::get('inbox-assoc/{id}', [AssociatesMessageController::class, "show_inbox"])->name('inbox-assoc');
 
     Route::get('/dynamic_pdf/pdf',[AssociatesMessageController::class, "pdf"])->name('pdf');
+    // Route::get('generate-pdf/{id}', [AssociatesMessageController::class, 'generatePDF'])->name('generate-pdf');
 
 //Routes for the Clients
     Route::get('/clients-message', [ClientsMessageController::class, "index"])->name("clients-message");

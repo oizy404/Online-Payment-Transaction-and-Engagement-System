@@ -9,6 +9,7 @@ use App\Models\Client;
 use App\Models\MessageClient;
 use App\Models\Message;
 
+use DB;
 use PDF;
 
 class AssociatesMessageController extends Controller
@@ -63,6 +64,13 @@ class AssociatesMessageController extends Controller
         return view('pages.show-receivedmsg-clients')->with("assoc_inbox_msg", $assoc_inbox_msg);
     }
 
+    public function get_client_msg(){
+     $assoc_inbox_msg = DB::table('message_clients');
+        //  ->limit(10)
+        //  ->get();
+     return $assoc_inbox_msg;
+    }
+
     public function pdf(){
         $pdf = \App::make('dompdf.wrapper');
         $pdf->loadHTML($this->convert_customer_data_to_html());
@@ -70,9 +78,17 @@ class AssociatesMessageController extends Controller
     }
 
     public function convert_customer_data_to_html(){
+        $assoc_inbox_msg = $this->get_client_msg();
         $output = '
-            <img src="{{asset('img_msgclients')}}/{{$assoc_inbox_msg->msg_imagefile}}" id="image-msg" alt="image msg" style="max-width:380px;">
+            <img src="asset/img_msgclients/$assoc_inbox_msg->msg_imagefile" id="image-msg" alt="image msg" style="max-width:380px;">
         ';
+        return $output;
     }
-    return $output;
+
+    // public function generatePDF(){
+
+    //     $pdf = PDF::loadView('pages.my-pdf-file');
+    
+    //     return $pdf->download('onlinewebtutorblog.pdf');
+    // }
 }
